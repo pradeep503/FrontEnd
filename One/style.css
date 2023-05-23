@@ -1,0 +1,20 @@
+.quote{
+    width: 200px;
+    border: 2px solid blueviolet;
+    padding: 1em;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1em;
+}
+.quote::before{
+    content: "\201C";
+    color:#07b11b;
+    font-size:2.5rem;
+    margin: 0 0.25em;
+}
+.quote::after{
+    content:'\201D';
+    color:#07b11b;
+    font-size:2.5rem;
+    margin: 0 0.25em;
+}

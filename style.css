@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+  margin-top: 35px;
+}
+
+.button {
+  position: relative;
+  margin: 0 auto 15px;
+  display: block;
+  width: 450px;
+  height: 83px;
+  text-decoration: none;
+  background-color: #fafafa;
+  color: #131313;
+  border-radius: 10px;
+  box-shadow: 0 4px #e7e7e7, 0 6px 1px #d0d0d2;
+}
+
+.button * {
+  transition: all 0.15s linear;
+}
+
+.button .title {
+  display: block;
+  padding: 20px 0 0 20px;
+  font-size: 1.25em;
+}
+
+.button .details {
+  display: block;
+  clear: both;
+  padding: 5px 0 20px 23px;
+  font-size: 0.85em;
+  color: #9a9ca2;
+}
+
+.button .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #9a9ca2;
+}
+
+.button .price strong {
+  display: inline-block;
+  height: 100%;
+  width: 36px;
+  line-height: 82px;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: #eee;
+  color: #ddd;
+  border-radius: 0 10px 10px 0;
+  text-shadow: 0 -1px #8d8f96;
+  box-shadow: 0 4px #d7d4d4;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  transition: all 0.075s linear;
+}
+
+.button.blue:before {
+  background-color: #7daee9;
+  box-shadow: 0 4px #719dd2;
+}
+
+.button.blue:hover:before {
+  background-color: #719dd2;
+  box-shadow: 0 4px #6085b3;
+}
+
+.button.blue:active:before {
+  box-shadow: 0 2px #6085b3;
+}
+
+.button.magenta:before {
+  background-color: #de7cb9;
+  box-shadow: 0 4px #c870a7;
+}
+
+.button.magenta:hover:before {
+  background-color: #c870a7;
+  box-shadow: 0 4px #aa5f8e;
+}
+
+.button.magenta:active:before {
+  box-shadow: 0 2px #aa5f8e;
+}
+
+.button.green:before {
+  background-color: #7fd373;
+  box-shadow: 0 4px #72be68;
+}
+
+.button.green:hover:before {
+  background-color: #72be68;
+  box-shadow: 0 4px #61a258;
+}
+
+.button.green:active:before {
+  box-shadow: 0 2px #61a258;
+}
+
+.button.red:before {
+  background-color: #f66d64;
+  box-shadow: 0 4px #dd625a;
+}
+
+.button.red:hover:before {
+  background-color: #dd625a;
+  box-shadow: 0 4px #bc534d;
+}
+
+.button.red:active:before {
+  box-shadow: 0 2px #bc534d;
+}
+
+.button:hover {
+  box-shadow: 0 4px #e2e2e2, 0 6px 1px #ccccce;
+}
+
+.button:hover .price strong {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px #d3d0d0;
+}
+
+.button:active {
+  top: 1px;
+  box-shadow: 0 2px #e2e2e2, 0 4px 1px #ccccce;
+}
+
+.button:active .price strong {
+  background-color: #e9e9e9;
+  box-shadow: 0 2px #d3d0d0;
+}
